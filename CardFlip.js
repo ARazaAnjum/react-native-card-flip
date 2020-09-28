@@ -142,8 +142,8 @@ class CardFlip extends Component<Props> {
   flipY() {
     const { side } = this.state;
     this._flipTo({
-      x: 50,
-      y: side === 0 ? 100 : 50
+      y: side === 0 ? 0 : 50,
+      x: side === 0 ? 100 : 0
     });
     this.setState({
       side: side === 0 ? 1 : 0,
@@ -154,8 +154,8 @@ class CardFlip extends Component<Props> {
   flipX() {
     const { side } = this.state;
     this._flipTo({
-      y: 50,
-      x: side === 0 ? 100 : 50
+      y: side === 0 ? 0 : 50,
+      x: side === 0 ? 100 : 0
     });
     this.setState({
       side: (side === 0) ? 1 : 0,
